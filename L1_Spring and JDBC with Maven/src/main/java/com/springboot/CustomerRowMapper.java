@@ -6,7 +6,6 @@ import org.springframework.jdbc.core.RowMapper;
 
 public class CustomerRowMapper implements RowMapper<Customer> {
 
-	@Override
 	public Customer mapRow(ResultSet rs, int rn) throws SQLException {
 		Customer cust=new Customer();
 		cust.setCid(rs.getInt(1));

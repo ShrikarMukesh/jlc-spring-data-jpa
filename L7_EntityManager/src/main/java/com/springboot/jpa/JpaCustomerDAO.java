@@ -12,7 +12,7 @@ public class JpaCustomerDAO implements CustomerDAO{
 	
 	@PersistenceContext
 	EntityManager entityManager;
-
+	
 	@Override
 	public void addCustomer(Customer cust) {
 		entityManager.persist(cust);
